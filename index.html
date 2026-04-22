@@ -1,52 +1,143 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Cool Website</title>
+  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #4facfe, #00f2fe);
-      color: white;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f4f6f8;
+      color: #222;
+    }
+
+    /* Top bar */
+    .navbar {
+      background: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .navbar h2 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .nav-links a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #555;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: #000;
+    }
+
+    /* Hero section */
+    .hero {
       text-align: center;
-    }
-
-    .container {
       padding: 100px 20px;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: white;
     }
 
-    h1 {
-      font-size: 50px;
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
     }
 
-    p {
-      font-size: 20px;
+    .hero p {
+      font-size: 18px;
+      opacity: 0.9;
     }
 
     .btn {
-      display: inline-block;
       margin-top: 20px;
-      padding: 12px 25px;
+      display: inline-block;
+      padding: 12px 24px;
       background: white;
       color: #333;
-      text-decoration: none;
       border-radius: 25px;
+      text-decoration: none;
       font-weight: bold;
     }
 
     .btn:hover {
-      background: #ddd;
+      background: #eee;
+    }
+
+    /* Content section */
+    .section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #777;
     }
   </style>
 </head>
+
 <body>
 
-  <div class="container">
-    <h1>Welcome 👋</h1>
-    <p>This is my first cool website!</p>
-    <a class="btn" href="#">Learn More</a>
-    <a href="https://google.com">Go to Google</a>
+  <!-- Navbar -->
+  <div class="navbar">
+    <h2>My Website</h2>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </div>
   </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Hello, I'm a Developer 👋</h1>
+    <p>I build simple and clean websites.</p>
+    <a class="btn" href="#projects">View Work</a>
+  </div>
+
+  <!-- Content -->
+  <div class="section" id="projects">
+
+    <div class="card">
+      <h3>🚀 Project One</h3>
+      <p>My first website built with HTML and CSS.</p>
+    </div>
+
+    <div class="card">
+      <h3>📱 Project Two</h3>
+      <p>A simple responsive layout design.</p>
+    </div>
+
+    <div class="card">
+      <h3>💡 About Me</h3>
+      <p>I’m learning web development and improving every day.</p>
+      <a href="https://google.com">Go to Google</a>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 My Website
+  </footer>
 
 </body>
 </html>
